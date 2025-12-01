@@ -86,9 +86,9 @@ Using the Primus SDK locally, the Dapp extracts the **plaintext response** — w
 
 ## Do Proving with zkVM
 
-Next, the Dapp sends  the **attestation** and the **plaintext response** to the **Verification Program** running inside a trusted TEE.
+Next, the Dapp sends  the **attestation** and the **plaintext response** to the **Verification Program** running inside a TEE (with zkVM).
 
-Inside the TEE:
+Inside the TEE (with zkVM):
 
 1. The **Business Program** calls the **Primus zkTLS Verification Program** to verifies:
 
@@ -99,6 +99,7 @@ Inside the TEE:
 
    * extracts the required JSON fields,
    * and performs its own domain-specific business logic.
+3. Finally, the zkVM returns a proof back to the Dapp.
 
 
 ## Try the Full Workflow with the Demo
