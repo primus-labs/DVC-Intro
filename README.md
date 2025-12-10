@@ -28,7 +28,7 @@ sequenceDiagram
       participant contract as Contract
       participant attestor as Attestor Nodes
     end
-    box Verification Program <br/> (TEE + zkTLS)
+    box Verification Program <br/> (TEE + zkVM)
       participant business as Business Program
       participant zktls as Primus zkTLS Program
     end
